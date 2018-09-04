@@ -1,0 +1,60 @@
+.history-list {
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.history-item {
+  text-align: right;
+}
+
+.history-item hr {
+  color: #aaa;
+  size: 1px;
+}
+
+.history-item-formula {
+  color: #888;
+  padding: 15px 15px 0 15px;
+}
+
+.history-item-result {
+  color: #3da4ab;
+  padding: 0 15px;
+}
+
+.history-item-result:hover {
+  cursor: pointer;
+  color: #0e9aa7;
+}
+
+.bottom-btns {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-btns button {
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 10px 15px;
+  width: 50%;
+  text-align: center;
+  background-color: #3da4ab;
+  outline: none;
+  border: none;
+  color: #fff;
+  -webkit-transition: background-color 0.35s ease-out;
+  -moz-transition: background-color 0.35s ease-out;
+  transition: background-color 0.35s ease-out;
+}
+
+.bottom-btns button:hover {
+  cursor: pointer;
+  background-color: #0e9aa7;
+}
+
+#calculate {
+  border-left: 1px solid #ddd;
+}

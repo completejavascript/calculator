@@ -1,0 +1,83 @@
+/* Display */
+
+.display {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+  justify-content: space-between;
+  padding: 15px 15px 0 15px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.display-formula,
+.display-input {
+  width: 100%;
+  resize: none;
+  font-family: Nunito Sans, Helvetica, Arial, sans-serif;
+  border: none;
+  outline: none;
+  text-align: right;
+  background-color: inherit;
+}
+
+.display-formula {
+  flex-grow: 1;
+  font-size: 2rem;
+}
+
+.display-input {
+  flex-shrink: 0;
+  font-size: 1.75rem;
+  color: #888;
+  white-space: nowrap;
+  padding-bottom: 15px;
+}
+
+/* Toolbar */
+
+.toolbar {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #3da4ab;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toolbar-item:hover {
+  cursor: pointer;
+  color: #0e9aa7;
+}
+
+#view-history {
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
+}
+
+#backspace {
+  margin-left: 30px;
+  font-size: 1.5rem;
+}
+
+#view-github {
+  color: #3da4ab;
+  font-size: 1.5rem;
+}
+
+#view-github:hover {
+  color: #0e9aa7;
+}
+
+@media (min-width: 768px) {
+  #view-github {
+    display: none;
+  }
+}
